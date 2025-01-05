@@ -34,7 +34,7 @@ public class PermissionClient {
     }
 
     public Optional<Permission> getPermissionById(Long id) {
-        return Optional.ofNullable(permissionService.get().uri(API_PERMISSIONS + id).retrieve().toEntity(Permission.class).getBody());
+        return Optional.ofNullable(permissionService.get().uri(API_PERMISSIONS + "/" + id).retrieve().toEntity(Permission.class).getBody());
     }
 
     public void deletePermissionById(Long id) {

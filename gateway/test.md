@@ -121,17 +121,17 @@ curl -XPOST http://localhost:8080/api/users \
 -d '{"username": "guest", "email": "guest@example.com"}'
 ```
 
-### Add User to Developers Group
+### Add Developer User to Developers Group
 ```bash
-curl -XPOST http://localhost:8080/api/user-groups/1/users/1
+curl -XPOST http://localhost:8080/api/user-groups/1/users/2
 ```
 
-### Add User to Managers Group
+### Add Admin User to Managers Group
 ```bash
-curl -XPOST http://localhost:8080/api/user-groups/2/users/2
+curl -XPOST http://localhost:8080/api/user-groups/2/users/1
 ```
 
-### Add User to Guests Group
+### Add Guest User to Guests Group
 ```bash
 curl -XPOST http://localhost:8080/api/user-groups/3/users/3
 ```
