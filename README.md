@@ -1,1 +1,4 @@
 # programlamadilleri
+![diagram](./diagram.png)
+
+
