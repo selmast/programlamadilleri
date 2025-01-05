@@ -1,0 +1,50 @@
+services:
+  organization-db:
+    image: postgres:latest
+    container_name: organization-db
+    ports:
+      - "5437:5432"
+    environment:
+      POSTGRES_DB: organization
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+
+  permission-db:
+    image: postgres:latest
+    container_name: permission-db
+    ports:
+      - "5433:5432"
+    environment:
+      POSTGRES_DB: permission
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+
+  role-db:
+    image: postgres:latest
+    container_name: role-db
+    ports:
+      - "5434:5432"
+    environment:
+      POSTGRES_DB: role
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres            
+
+  user-db:
+    image: postgres:latest
+    container_name: user-db
+    ports:
+      - "5435:5432"
+    environment:
+      POSTGRES_DB: user
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres     
+
+  user-group-db:
+    image: postgres:latest
+    container_name: user-group
+    ports:
+      - "5436:5432"
+    environment:
+      POSTGRES_DB: user-group
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres                   

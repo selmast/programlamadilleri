@@ -1,0 +1,22 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5436/user-group
+    username: postgres
+    password: postgres
+  jpa:
+    hibernate:
+      ddl-auto: update
+      #ddl-auto: create
+    show-sql: true
+  jackson:
+    default-property-inclusion: non_null
+    serialization.FAIL_ON_EMPTY_BEANS: false
+
+role:
+  service: http://localhost:8083
+
+user:
+  service: http://localhost:8084
+
+server:
+  port: 8085
